@@ -1,7 +1,4 @@
-.navbar-nav .nav-item .nav-link {
-    color: #000;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap');
 
 .navbar-nav {
     text-align: center;
@@ -17,8 +14,11 @@
             0 4.9px 17.2px rgba(0, 0, 0, 0.072),
             0 22px 77px rgba(0, 0, 0, 0.12);
             transition: 0.5s all;
+            color:black;
             &:hover{
+                background:black;
                 transform: translateX(20px);
+                color:white;
             }
 
 
@@ -34,9 +34,17 @@ header {
 .left-site {
     background: lightgrey;
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
+.radio-title{
+    h1{
+        font-size:80px;
+        font-family: 'Economica',
+        sans-serif;
+    }
+}
 @media screen and (max-width:992px) {
     header {
         grid-template-columns: 1fr;
@@ -48,6 +56,17 @@ header {
 }
 
 .right-site {
-    border: 1px black solid;
-    margin: 10px;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    background:url(../images/audio-bg.jpg) center center /100% no-repeat;
+    background-color: rgba(3, 31, 158, 0.397);
+    background-blend-mode: screen;
+}
+
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 400px;
+    height: 50px;
 }
