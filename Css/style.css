@@ -1,0 +1,57 @@
+.navbar-nav .nav-item .nav-link {
+  color: #000;
+}
+
+.navbar-nav {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar-nav li {
+  width: 100%;
+}
+
+.navbar-nav li a {
+  background: white;
+  margin: 10px auto;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 1.5px 5.1px rgba(0, 0, 0, 0.048), 0 4.9px 17.2px rgba(0, 0, 0, 0.072), 0 22px 77px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1.5px 5.1px rgba(0, 0, 0, 0.048), 0 4.9px 17.2px rgba(0, 0, 0, 0.072), 0 22px 77px rgba(0, 0, 0, 0.12);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.navbar-nav li a:hover {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+}
+
+.left-site {
+  background: lightgrey;
+  height: 100vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .left-site {
+    height: auto;
+  }
+}
+
+.right-site {
+  border: 1px black solid;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
