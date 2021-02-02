@@ -1,0 +1,115 @@
+/* all variable are here */
+$them-gd: linear-gradient(to right, #F0EE3A, #5e08ce);
+$logo-theme: #F0EE3A;
+$theme-bg:#5e08ce;
+$button-bg:#1C2853;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.home {
+    background: url(../images/3425171.jpg) center center /cover no-repeat;
+    background-color: #00002e;
+    background-blend-mode: lighten;
+    height: 100vh;
+}
+
+.conatiner {
+    width: 1200px;
+}
+
+.navbar{
+    background:rgba(0, 0, 0, 0.336);
+    .logo{
+        text-align: center;
+        img{
+            width:50%;
+            border-radius:50%;
+        }
+    }
+    .content{
+        h1.title{
+            font-size:80px;
+            font-weight:700;
+            font-family: Arial, Helvetica, sans-serif;
+            background:$them-gd;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+        p{
+           background:$them-gd;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           font-weight:bolder;
+           text-align: center;
+        }
+    }
+}
+.main-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    align-items: center;
+}
+
+nav>div {
+    padding: 20px
+}
+
+
+.content {
+     align-items: end;
+     padding:20px;
+    .left-site{
+        .row{
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            margin:30px auto;
+            .col{
+                padding:28px 10px;
+                width:100%;
+                color:$logo-theme;
+                background:#00002eb2;
+                margin:10px auto;
+                border:$logo-theme 1px solid;
+                border-radius:30px;
+                text-align:center
+
+            }
+        }
+    }
+
+    .right-site{
+       
+        .play-button{
+            justify-content: center;
+            align-items:center;
+            .vol-up,.vol-down{
+                height:100px;
+                width:100px;
+                background:$button-bg;
+                border-radius: 50%;
+                margin:20px;
+                border:3px solid $logo-theme;
+                justify-content: center;
+                align-content: center;
+            }
+            .play-pause{
+                height:200px;
+                width:200px;
+                border-radius: 50%;
+                background:$button-bg;
+                border:4px solid $logo-theme;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
